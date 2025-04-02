@@ -1,4 +1,4 @@
-import { useState , useEffect] } from "react";
+import { useState , useEffect } from "react";
 import { TodoProvider } from "./contexts";
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
  }
 
  const updateTodo = (id , todo ) =>{
-  setTodos((prev => prev.map((prevTodo)=>(prevTodo.id=== id ? todo : prevTodo)))
+  setTodos(prev => prev.map((prevTodo)=>(prevTodo.id=== id ? todo : prevTodo)))
 
- }
+ }_
 
  const deleteTodo = (id) => {
   setTodos((prev) => prev.filter((todo)=>todo.id !== id))
